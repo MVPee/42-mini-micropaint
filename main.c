@@ -25,7 +25,7 @@ int init_data(t_data *data, FILE *file)
 {
     if (fscanf(file, "%d %d %c\n", &data->width, &data->height, &data->background) != 3)
         return (1);
-    if (data->width < 0 || data->width > 300 || data->height < 0 || data->height > 300)
+    if (data->width <= 0 || data->width > 300 || data->height <= 0 || data->height > 300)
         return (1);
     if (!(data->matrice = malloc(sizeof(char) * (data->width * data->height))))
         return (1);
