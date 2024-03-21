@@ -36,7 +36,7 @@ int init_data(t_data *data, FILE *file)
 int is_in_rectangle(float x, float y, t_rectangle rect)
 {
 	if ((((x < rect.x) || (rect.x + rect.width < x)) || (y < rect.y)) || (rect.y + rect.height < y))
-		return (0); //outside
+		return (0);
     if (rect.mode == 'R')
         return (1);
     if (((x - rect.x < 1.00000000) || ((rect.x + rect.width) - x < 1.00000000)) || ((y - rect.y < 1.00000000 || ((rect.y + rect.height) - y < 1.00000000))))
@@ -71,9 +71,9 @@ int main(int ac, char **av)
         return (write(1, "Error: Operation file corrupted\n", 32), 1);
     if (process(&data, file))
         return (free(data.matrice), write(1, "Error: Operation file corrupted\n", 32), 1);
-    for (int i = 0; i < data.height; i ++)
+    for (int y = 0; y < data.height; y++)
     {
-        write(1, i * data.width + data.matrice, data.width);
+        write(1, y * data.width + data.matrice, data.width);
         write(1, "\n", 1);
     }
     return (free(data.matrice), 0);
