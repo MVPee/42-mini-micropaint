@@ -33,17 +33,12 @@ int init_data(t_data *data, FILE *file)
     return (0);
 }
 
-float sq_dist(float x1, float y1, float x2, float y2)
-{
-    return (sqrtf((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1)));
-}
-
 int is_in_circle(float x, float y, t_circle circle)
 {
 	float distance;
 	float distance_sqrt;
 
-	distance_sqrt = sq_dist(x, y, circle.x, circle.y);
+	distance_sqrt = sqrtf((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
 	distance = distance_sqrt - circle.radius;
 	if (distance >= 0.00000000)
         return (0);
