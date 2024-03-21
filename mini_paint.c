@@ -38,7 +38,7 @@ int is_in_circle(float x, float y, t_circle circle)
 	float distance;
 	float distance_sqrt;
 
-	distance_sqrt = sqrtf((x2 - x1) * (x2 - x1) + (y2 - y1) * (y2 - y1));
+	distance_sqrt = sqrtf((x - circle.x) * (x - circle.x) + (y - circle.y) * (y - circle.y));
 	distance = distance_sqrt - circle.radius;
 	if (distance >= 0.00000000)
         return (0);
