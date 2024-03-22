@@ -35,11 +35,11 @@ int init_data(t_data *data, FILE *file)
 
 int is_in_rectangle(float x, float y, t_rectangle rect)
 {
-	if ((((x < rect.x) || (rect.x + rect.width < x)) || (y < rect.y)) || (rect.y + rect.height < y))
+	if (x < rect.x || rect.x + rect.width < x || y < rect.y || rect.y + rect.height < y)
 		return (0);
     if (rect.mode == 'R')
         return (1);
-    if (((x - rect.x < 1.00000000) || ((rect.x + rect.width) - x < 1.00000000)) || ((y - rect.y < 1.00000000 || ((rect.y + rect.height) - y < 1.00000000))))
+    if (x - rect.x < 1.00000000 || rect.x + rect.width - x < 1.00000000 || y - rect.y < 1.00000000 || rect.y + rect.height - y < 1.00000000)
 		return (1);
     return (0);
 }
