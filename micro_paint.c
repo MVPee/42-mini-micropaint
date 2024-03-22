@@ -50,7 +50,7 @@ int process(t_data *data, FILE *file)
 
     while(fscanf(file, "%c %f %f %f %f %c\n", &rect.mode, &rect.x, &rect.y, &rect.width, &rect.height, &rect.color) == 6)
     {
-        if ((rect.mode != 'r' && rect.mode != 'R') || rect.width == 0.00000000 || rect.height == 0.00000000)
+        if ((rect.mode != 'r' && rect.mode != 'R') || rect.width <= 0.00000000 || rect.height <= 0.00000000)
             return (1);
         for (int x = 0; x < data->width; x++)
             for (int y = 0; y < data->height; y++)
