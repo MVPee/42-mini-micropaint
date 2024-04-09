@@ -6,12 +6,13 @@
 
 <p align="center">
 	<b><i>Exam Rank 03, 42 School</i></b><br>
+	<b><i>easiest way to do it</i></b>
 </p>
 
 ## 💡 About the project
 
 > _Get ready to draw circles and rectangles.
-Try to remember the radius of a circle and the air of a rectangle/square._
+Try to remember the radius of a circle and the air of a rectangle/square from your math class._
 
 ---------
 
@@ -21,3 +22,7 @@ Try to remember the radius of a circle and the air of a rectangle/square._
   | --- | --- | --- |
   | Minipaint | ✔️ | 2024-03-22 |
   | Micropaint | ✔️ | 2024-03-23 |
+
+---------
+
+#### Leave a ⭐ if this helped you pass the exam without problems
