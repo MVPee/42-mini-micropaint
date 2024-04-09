@@ -25,4 +25,4 @@ Try to remember the radius of a circle and the air of a rectangle/square from yo
 
 ---------
 
-#### Leave a ⭐ if this helped you pass the exam without problems
+#### Leave a ⭐ if this helped you pass the exam!
