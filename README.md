@@ -20,8 +20,8 @@ Try to remember the radius of a circle and the air of a rectangle/square from yo
 
   | Project | Work | Date |
   | --- | --- | --- |
-  | Minipaint | ✔️ | 2024-03-22 |
-  | Micropaint | ✔️ | 2024-03-23 |
+  | Minipaint | ✔️ | 2024-04-05 |
+  | Micropaint | ✔️ | 2024-04-05 |
 
 ---------
 
