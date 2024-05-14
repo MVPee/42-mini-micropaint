@@ -40,11 +40,11 @@ int is_in_circle(float x, float y, t_circle circle)
 
 	distance_sqrt = sqrtf((x - circle.x) * (x - circle.x) + (y - circle.y) * (y - circle.y));
 	distance = distance_sqrt - circle.radius;
-	if (distance >= 0.00000000)
+	if (distance > 0.00000000)
         return (0);
     if (circle.mode == 'C')
         return (1);
-    if (distance >= -1.00000000)
+    if (distance > -1.00000000)
         return (1);
     return (0);
 }
