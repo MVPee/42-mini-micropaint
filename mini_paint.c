@@ -75,11 +75,11 @@ int main(int ac, char **av)
     if (!(file = fopen(av[1], "r")) || init_data(&data, file))
         return (write(1, "Error: Operation file corrupted\n", 32), 1);
     if (process(&data, file))
-        return (free(data.matrice), write(1, "Error: Operation file corrupted\n", 32), 1);
+        return (free(data.matrice), fclose(file), write(1, "Error: Operation file corrupted\n", 32), 1);
     for (int y = 0; y < data.height; y++)
     {
         write(1, y * data.width + data.matrice, data.width);
         write(1, "\n", 1);
     }
-    return (free(data.matrice), 0);
+    return (free(data.matrice), fclose(file), 0);
 }
